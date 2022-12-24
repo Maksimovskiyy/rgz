@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="mainContainer">
+        <div class="galleryImgContainer">
+            <img src="img/1.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/2.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/3.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/4.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/5.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/6.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/7.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/8.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/9.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/10.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/11.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/12.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/13.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/14.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/15.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/16.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/17.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/18.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/19.jpg" class="bigImg">
+        </div>
+        <div class="galleryImgContainer">
+            <img src="img/20.jpg" class="bigImg">
+        </div>
+
+        <a class="previous" onclick="nextImg(-1)">⮜</a>
+        <a class="next" onclick="nextImg(1)">⮞</a>
+        <a href="#settings" class="bottom_title">К превью и настройкам</a>
+
+
+    </div>
+    <div class="settings row" id="settings">
+        <div class="settings_column" style="text-align: center">
+            <p>Превью крупнее</p>
+            <label class="img_switch">
+                <input id="preview_plus" checked type="checkbox" onclick="previewPlus()">
+                <span class="preview_slider round"></span>
+            </label>
+        </div>
+
+        <div class="settings_column" style="text-align: center">
+            <p>Превью мельче</p>
+            <label class="img_switch">
+                <input id="preview_minus" type="checkbox" onclick="previewMinus()">
+                <span class="preview_slider round"></span>
+            </label>
+        </div>
+
+        <div class="settings_column" style="text-align: center">
+            <p>Режим слайд-шоу</p>
+            <label class="img_switch">
+                <input id="slide_show_check_box" type="checkbox" onclick="startSlideShow()">
+                <span class="preview_slider round"></span>
+            </label>
+        </div>
+
+    </div>
+    <div class="row images">
+        <div class="column">
+            <img class="preview" src="img/1.jpg" onclick="setImg(1)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/2.jpg" onclick="setImg(2)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/3.jpg" onclick="setImg(3)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/4.jpg" onclick="setImg(4)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/5.jpg" onclick="setImg(5)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/6.jpg" onclick="setImg(6)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/7.jpg" onclick="setImg(7)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/8.jpg" onclick="setImg(8)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/9.jpg" onclick="setImg(9)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/10.jpg" onclick="setImg(10)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/11.jpg" onclick="setImg(11)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/12.jpg" onclick="setImg(12)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/13.jpg" onclick="setImg(13)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/14.jpg" onclick="setImg(14)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/15.jpg" onclick="setImg(15)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/16.jpg" onclick="setImg(16)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/17.jpg" onclick="setImg(17)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/18.jpg" onclick="setImg(18)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/19.jpg" onclick="setImg(19)">
+        </div>
+        <div class="column">
+            <img class="preview" src="img/20.jpg" onclick="setImg(20)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</main>
+<footer>
+    &copy; Овчинников Максим, ФБИ-01, 2022
+</footer>
+</body>
+</html>
+
